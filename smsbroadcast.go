@@ -3,7 +3,6 @@ package smsBroadcast
 import (
 	"crypto/tls"
 	"errors"
-	"fmt"
 	"io/ioutil"
 	"net/http"
 	"net/url"
