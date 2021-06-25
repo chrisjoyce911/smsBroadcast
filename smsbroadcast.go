@@ -114,7 +114,6 @@ func checkResponse(r *Response) error {
 // first decode it.
 func (b *Broadcast) doRequest(req WRequest, v interface{}) (*Response, error) {
 
-	fmt.Println("--- " + req.url.String())
 	resp, err := b.client.PostForm(req.url.String(), *req.data)
 	if err != nil {
 		return nil, err
