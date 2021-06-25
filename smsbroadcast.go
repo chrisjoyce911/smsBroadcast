@@ -176,8 +176,5 @@ func (b *Broadcast) Send(msg Message) (*Output, *Response, error) {
 		return nil, resp, err
 	}
 
-	// TODO Work out output
-	// log.Print([]byte(resp.Body))
-
 	return a, resp, err
 }
